@@ -15,6 +15,7 @@ const viewsPath = path.join(__dirname, '../templates/views')
 dotenv.config({path:path.join(__dirname,'../keys.env')})
 
 const server = express()
+const port = process.env.PORT 
 
 server.set('view engine', "hbs")
 server.set('views', viewsPath);
@@ -126,4 +127,4 @@ server.get('*', (req, res) => {
     })
 })
 
-server.listen(3000, (req, res) => { console.log("Started Server on Port:3000") })
+server.listen(port, (req, res) => { console.log("Started Server on Port:"+port) })

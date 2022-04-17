@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
     weatherTemperatureStatement.textContent = "Temperature:" 
     weatherPrecipitation.textContent = "Chance of Precipitation:"
 
-    fetch("http://localhost:3000/weather?address=" + location).then((response) => {
+    fetch("/weather?address=" + location).then((response) => {
         response.json().then((data) => {
 
             searchMsg.textContent = data.msg
