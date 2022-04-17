@@ -1,0 +1,31 @@
+{{!-- 404 Page --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/weather.png" type="image/x-icon">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+    {{> header}}
+    <h1>Jai Bajrangbali</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-template">
+                    <h1>Oops!</h1>
+                    <div class="error-details">
+                        <h2>{{msg}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{>footer}}
+</body>
