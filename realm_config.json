@@ -4,5 +4,5 @@
     "name": "Weather-App",
     "location": "IN-MB",
     "deployment_model": "LOCAL",
-    "environment": "production"
+    "environment": "development"
 }
